@@ -1,0 +1,44 @@
+@import 'default';
+@import 'colors';
+
+.messages {
+
+  width: 100%;
+
+  li {
+    list-style-type: none;
+  }
+
+  li:nth-child(odd) {
+
+  }
+}
+
+form {
+  @include position(absolute);
+  bottom: 25px;
+  width: 100vw;
+
+  .message-container {
+    vertical-align: bottom;
+    width: 80%;
+    border: none;
+    background: none;
+    border-bottom: 2px solid $primary;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $secondary;
+    }
+  }
+
+  .message-button {
+    vertical-align: bottom;
+    width: 20%;
+    border: none;
+    &:active {
+      outline: none;
+      background-color: $secondary;
+    }
+
+  }
+}
