@@ -4,10 +4,10 @@ Error: Invalid CSS after "@include ": expected identifier, was "'default';"
 
 1: @include 'default';
 2: 
-3: .error {
-4:   h1 {
-5:     text-align: center;
-6:   }
+3: body {
+4:   margin-left: 2em;
+5: }
+6: 
 
 Backtrace:
 /Users/erinmilling/Library/Mobile Documents/com~apple~CloudDocs/Third Year/Semester 2/Web/simple-chat-app/scss/404.scss:1
@@ -44,4 +44,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"@include \": expected identifier, was \"'default';\"\A         on line 1 of /Users/erinmilling/Library/Mobile Documents/com~apple~CloudDocs/Third Year/Semester 2/Web/simple-chat-app/scss/404.scss\A \A 1: @include 'default';\A 2: \A 3: .error {\A 4:   h1 {\A 5:     text-align: center;\A 6:   }"; }
+  content: "Error: Invalid CSS after \"@include \": expected identifier, was \"'default';\"\A         on line 1 of /Users/erinmilling/Library/Mobile Documents/com~apple~CloudDocs/Third Year/Semester 2/Web/simple-chat-app/scss/404.scss\A \A 1: @include 'default';\A 2: \A 3: body {\A 4:   margin-left: 2em;\A 5: }\A 6: "; }
