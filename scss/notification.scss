@@ -1,0 +1,36 @@
+
+//lower right corner, regtangular, newest on bottom
+.notification-container {
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+
+  height: 100vh;
+  width: 10vh;
+
+  min-width: 250px;
+
+  .notifications {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+
+    li {
+      margin: 2.5px;
+
+      .notification {
+        padding: 10px 25px;
+
+        &.connect { background: rgb(208, 33, 108)}
+        &.disconnect { background: rgb(22, 186, 78)}
+        &.info { background: rgb(247, 125, 201)}
+      }
+    }
+  }
+}

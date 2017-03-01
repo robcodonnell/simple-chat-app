@@ -8,17 +8,36 @@
   @include justify-content(center);
 
   height: 100vh;
-  width: 33vw;
-
-  background: $secondary;
+  width: 100vw;
 
 }
 
 .login-button {
   @include position(absolute);
   top: 55%;
-  left: 15%;
+  left: 50%;
 
   @include transform(translate3d(-50%,-50%,0));
 
 }
+
+.login {
+  @include position(fixed);
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 100;
+
+  background:rgb(235, 148, 68);
+}
+
+// div.login.show
+//  form.login-form
+//    div
+//      div
+//        input#username
+//        label
+//      button.login-button
