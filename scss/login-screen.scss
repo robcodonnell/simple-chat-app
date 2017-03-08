@@ -14,8 +14,15 @@
 
 .login-button {
   @include position(absolute);
-  top: 55%;
+  top: 60%;
   left: 50%;
+  border: 5px solid #000;
+  background-color: transparent;
+  box-shadow: 5px 5px 0px;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  width: 20%;
+  cursor: pointer;
 
   @include transform(translate3d(-50%,-50%,0));
 
@@ -31,7 +38,7 @@
 
   z-index: 100;
 
-  background:rgb(235, 148, 68);
+  background: $secondary;
 }
 
 // div.login.show
@@ -41,3 +48,35 @@
 //        input#username
 //        label
 //      button.login-button
+
+.login-form {
+  div {
+    position: relative;
+    .right {
+      .container {
+        width: 50%;
+        position: absolute;
+        left: 45%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        label {
+          font-size: 22px;
+        }
+        input {
+          border: none;
+          background: none;
+          border-bottom: 5px solid #000;
+          width: 100%;
+          font-family: 'VT323', monospace;
+          font-size: 20px;
+          &:active {
+            outline: none;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
