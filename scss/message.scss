@@ -9,15 +9,34 @@
     list-style-type: none;
 
     div {
-      font-size: 22px;
+      font-size: 24px;
     }
   }
 
   li:nth-child(odd) {
     background-color: $secondary;
     text-align: right;
+
+    &.message-body {
+      text-align: right;
+    }
   }
 }
+
+
+
+
+.message-body {
+  display: flex;
+  flex-direction: column;
+
+  .time {
+    font-size: 10px;
+  }
+}
+
+
+
 
 form {
   @include position(absolute);

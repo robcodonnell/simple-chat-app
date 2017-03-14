@@ -12,6 +12,8 @@
 
 }
 
+
+
 .login-button {
   @include position(absolute);
   top: 60%;
@@ -52,6 +54,14 @@
 .login-form {
   div {
     position: relative;
+    .logo {
+      width: 40%;
+      position: absolute;
+      z-index: 1000000;
+      img {
+        width: 100%;
+      }
+    }
     .right {
       .container {
         width: 50%;
